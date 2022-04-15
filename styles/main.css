@@ -160,3 +160,41 @@ top-blogs-stylesheet
     color: #FF4A60;
     ;
 }
+
+@media only screen and (max-width:688px) {
+    .containar {
+        width: 100%;
+    }
+
+    .players,
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player,
+    .blog {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .containar {
+        width: 100px;
+    }
+
+    .players,
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+    }
+}
